@@ -12,9 +12,8 @@
 	st = status -b
 	logg = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative
 	c = "!git add -A %% git commit -m "
-	amend = !git add -A && git commit --amend -no-edit
-	f = !git fetch --all && git rebase origin/master
-    
+	amend = "!git add -A && git commit --amend -no-edit"
+	f = "!git fetch --all && git rebase origin/master"
     delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
     # diff = diff --ignore-space-at-eol -b -w --ignore-blank-lines
     d = "!git diff --ignore-space-at-eol -b -w --ignore-blank-lines"
