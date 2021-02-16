@@ -107,8 +107,8 @@ fi
 # For a full list of active aliases, run `alias`.
 
 # Personal Settings
-alias work="cd ~/Projects/Sparkgeo/Prescient && conda activate prescient"
-alias james="cd ~/Projects/Personal"
+alias work="cd ~/Projects/Sparkgeo && conda activate prescient"
+alias james="cd ~/Projects/Personal && conda activate james"
 
 # Filesystem aliases
 alias ..='cd ..'
